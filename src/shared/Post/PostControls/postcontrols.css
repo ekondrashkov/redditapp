@@ -1,0 +1,54 @@
+.controls {
+  /* position: relative; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.actions > * + * {
+  margin: 0 0 0 13px;
+}
+
+.commentstext {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--grey99);
+}
+
+.votes {
+  display: none;
+  padding-left: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--grey99);
+}
+
+@media all and (min-width: 1024px) {
+  .controls {
+    order: 3;
+    flex: 0 0;
+    margin: 0;
+  }
+
+  .commentstext {
+    display: inline;
+  }
+
+  .actions > * + * {
+    margin: 0 0 0 28px;
+  }
+
+  .votes {
+    display: inline-block;
+  }
+}

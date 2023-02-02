@@ -1,0 +1,75 @@
+.menuItemsList {
+  padding: 0 20px;
+}
+
+.menuItem,
+.menuItemHide {
+  padding: 12px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuItem > span,
+.menuItemHide > span {
+  transition: color .2s ease-in-out;
+}
+
+.menuItem:focus > span,
+.menuItemHide:focus > span {
+  color: var(--orange);
+}
+
+.menuItem:hover > span,
+.menuItemHide:hover > span {
+  color: var(--orange);
+}
+
+.menuItem:active > span,
+.menuItemHide:active > span {
+  color: var(--orange);
+}
+
+.menuItem > span,
+.menuItemHide > span {
+  margin-left: 7px;
+}
+
+.menuItem > * > svg,
+.menuItemHide > * > svg {
+  fill: var(--grey99);
+  transition: fill .2s ease-in-out;
+}
+
+.menuItem:focus > * > svg,
+.menuItemHide:focus > * > svg {
+  fill: var(--orange);
+}
+
+.menuItem:hover > * > svg,
+.menuItemHide:hover > * > svg {
+  fill: var(--orange);
+}
+
+.menuItem:active > * > svg,
+.menuItemHide:active > * > svg {
+  fill: var(--orange);
+}
+
+.divider,
+.dividerHide {
+  height: 1px;
+  width: 100%;
+  background-color: var(--greyEC);
+}
+
+@media all and (min-width: 320px) and (max-width: 1023px) {
+  .menuItemHide {
+    display: none;
+  }
+
+  .dividerHide {
+    display: none;
+  }
+}

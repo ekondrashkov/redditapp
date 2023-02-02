@@ -1,0 +1,21 @@
+.postHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: -24px -24px 22px;
+  padding: 12px 20px;
+  width: calc(100% + 48px);
+  background-color: var(--black);
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+}
+
+@media all and (min-width: 1024px) {
+  .postHeader {
+    display: none;
+  }
+}

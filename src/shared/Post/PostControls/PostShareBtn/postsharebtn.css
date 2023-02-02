@@ -1,0 +1,28 @@
+.shareButtonImgDesc,
+.shareButtonText {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .shareButton {
+    display: flex;
+    align-items: center;
+  }
+
+  .shareButtonImgDesc {
+    display: inline-block;
+  }
+
+  .shareButtonText {
+    display: inline;
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--grey99);
+  }
+
+  .shareButtonImgMob {
+    display: none;
+  }
+}

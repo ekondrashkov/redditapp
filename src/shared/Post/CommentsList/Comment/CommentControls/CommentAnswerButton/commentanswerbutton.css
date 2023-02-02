@@ -1,0 +1,26 @@
+.answerButton {
+  display: flex;
+  align-items: center;
+}
+.answerButton * {
+  color: var(--greyC4);
+}
+
+.answerText {
+  padding: 0 0 0 6px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media all and (min-width: 1024px) {
+  .answerButton {
+    margin-right: 27px;;
+  }
+
+  .answerText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--grey99);
+  }
+}

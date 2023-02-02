@@ -1,0 +1,18 @@
+.hideButton {
+  display: none;
+}
+
+.hideButtonText {
+  padding-left: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--grey99);
+}
+
+@media all and (min-width: 1024px) {
+  .hideButton {
+    display: flex;
+    align-items: center;
+  }
+}

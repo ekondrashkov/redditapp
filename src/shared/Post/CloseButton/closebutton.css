@@ -1,0 +1,14 @@
+.closeButton {
+  display: none;
+  width: 25px;
+  height: 25px;
+}
+
+@media all and (min-width: 1024px) {
+  .closeButton {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+  }
+}

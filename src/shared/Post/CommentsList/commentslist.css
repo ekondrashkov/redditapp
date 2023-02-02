@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media all and (min-width: 1024px) {
+  .list {
+    padding-left: 16px;
+  }
+}
+

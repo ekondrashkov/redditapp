@@ -1,0 +1,28 @@
+.saveButton {
+  display: flex;
+  align-items: center;
+}
+
+.saveButtonImgDesc,
+.saveButtonText {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .saveButtonImgDesc {
+    display: inline-block;
+  }
+
+  .saveButtonText {
+    display: inline;
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--grey99);
+  }
+
+  .saveButtonImgMob {
+    display: none;
+  }
+}
